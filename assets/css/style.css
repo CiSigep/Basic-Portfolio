@@ -21,9 +21,17 @@
     color: #777777; 
 }
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url("../images/rockywall.png");
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 header nav {
@@ -80,6 +88,23 @@ input[type=submit] {
     border: none;
 }
 
+footer {
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+footer div {
+    color: #DDDDDD;
+    font-size: 8pt;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+}
+
 /* Class Styling */
 .name-header {
     float: left;
@@ -93,6 +118,7 @@ input[type=submit] {
     margin-top: 0px;
     background: #FFFFFF;
     border-bottom: #CCCCCC 1px solid;
+    margin-bottom: 40px;
 }
 
 .main-width {
@@ -108,20 +134,26 @@ input[type=submit] {
     overflow: auto;
 }
 
+.main-wrapper {
+    min-height: calc(100% - 58px);
+}
+
 .main-content {
+    box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
-    margin-top: 40px;
     padding: 20px;
 }
 
-.top-margin-20 {
-    margin-top: 20px;
+.top-margin-25 {
+    margin-top: 25px;
 }
 
-/* Id Styling */
+.no-top-margin {
+    margin-top: 0;
+}
 
-#profileImage {
+.profile-image {
     float: left;
     max-width: 150px;
     max-height: 150px;
