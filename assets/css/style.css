@@ -88,6 +88,10 @@ input[type=submit] {
     border: none;
 }
 
+textarea {
+    resize: none;
+}
+
 footer {
     border-top: 8px solid #4aaaa5;
     background-color: #666666;
@@ -143,6 +147,7 @@ footer div {
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
     padding: 20px;
+    margin-bottom: 40px; 
 }
 
 .top-margin-25 {
@@ -158,4 +163,38 @@ footer div {
     max-width: 150px;
     max-height: 150px;
     margin-right: 20px;
+}
+
+.portfolio-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+.portfolio-image {
+    z-index: 1;
+}
+.image-title {
+    z-index: 2;
+    background: #4AAAA5;
+    color: #FFFFFF;
+    padding: 15px 0px;
+    position: relative;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bottom-row {
+    margin-bottom: 0px;
 }
